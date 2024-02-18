@@ -16,7 +16,7 @@ pipeline {
             '''
             sh """
                echo 'Using a multi-line shell step 2'
-               echo 'This is demo: ${var.DEMO}'
+               echo 'This is demo: ${env.DEMO}'
                chmod +x test.sh
                ./test.sh
             """
